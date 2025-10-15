@@ -930,6 +930,8 @@ services:
   # The Weaviate vector store.
   weaviate:
     image: semitechnologies/weaviate:1.19.0
+    ports:
+      - "8001:8001" 
     profiles:
       - ""
       - weaviate
